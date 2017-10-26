@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScintillaNET>
+  <Language Name="vbscript">
+    <Styles>
+      <Style Name="Default" FontName="Consolas"/>
+    </Styles>
+    <AutoComplete FillUpCharacters=".([" SingleLineAccept="True" IsCaseSensitive="False">
+      <List>
+        for in do
+        if else
+        call cd chdir cls color copy date del dir echo endlocal
+        erase exit md mkdir move path
+        popd prompt pushd rd ren rename rmdir set setlocal
+        shift time title type ping query sc findstr
+      </List>
+    </AutoComplete>
+
+    <Indentation TabWidth="4" />
+
+    <Lexer LineCommentPrefix="rem ::">
+      <Keywords List="0" Inherit="False">
+        for in do
+        cd chdir cls color copy date del dir echo endlocal
+        erase exit md mkdir move path
+        popd prompt pushd rd ren rename rmdir set setlocal
+        shift time title type ping query sc findstr
+      </Keywords>
+      <Keywords List="1">pause call ping</Keywords>
+      <Keywords List="3">if else</Keywords>
+    </Lexer>
+  </Language>
+</ScintillaNET>

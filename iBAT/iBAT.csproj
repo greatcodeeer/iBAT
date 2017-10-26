@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4331D49-8F24-4494-B343-8E7A9CEA2C38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iBAT</RootNamespace>
+    <AssemblyName>iBAT</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Publish\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Publish\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ScintillaNET">
+      <HintPath>..\Publish\ScintillaNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\FrmBAT_choice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\FrmBAT_choice.Designer.cs">
+      <DependentUpon>FrmBAT_choice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\FrmBAT_for.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\FrmBAT_for.Designer.cs">
+      <DependentUpon>FrmBAT_for.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\FrmBAT_if.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\FrmBAT_if.Designer.cs">
+      <DependentUpon>FrmBAT_if.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\FrmBAT_logic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\FrmBAT_logic.Designer.cs">
+      <DependentUpon>FrmBAT_logic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\FrmBAT_set.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\FrmBAT_set.Designer.cs">
+      <DependentUpon>FrmBAT_set.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command\FrmBAT_环境变量.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Command\FrmBAT_环境变量.Designer.cs">
+      <DependentUpon>FrmBAT_环境变量.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm123456789.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm123456789.Designer.cs">
+      <DependentUpon>Frm123456789.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddUserCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddUserCode.Designer.cs">
+      <DependentUpon>FrmAddUserCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCodeUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCodeUnit.Designer.cs">
+      <DependentUpon>FrmCodeUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExtendSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExtendSetting.Designer.cs">
+      <DependentUpon>FrmExtendSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFunction_Mini.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFunction_Mini.designer.cs">
+      <DependentUpon>FrmFunction_Mini.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNxN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNxN.designer.cs">
+      <DependentUpon>FrmNxN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParaS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParaS.Designer.cs">
+      <DependentUpon>FrmParaS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSafe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSafe.designer.cs">
+      <DependentUpon>FrmSafe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting.cs" />
+    <Compile Include="SqliteUnit.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\FrmBAT_choice.resx">
+      <DependentUpon>FrmBAT_choice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\FrmBAT_for.resx">
+      <DependentUpon>FrmBAT_for.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\FrmBAT_if.resx">
+      <DependentUpon>FrmBAT_if.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\FrmBAT_logic.resx">
+      <DependentUpon>FrmBAT_logic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\FrmBAT_set.resx">
+      <DependentUpon>FrmBAT_set.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command\FrmBAT_环境变量.resx">
+      <DependentUpon>FrmBAT_环境变量.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm123456789.resx">
+      <DependentUpon>Frm123456789.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddUserCode.resx">
+      <DependentUpon>FrmAddUserCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCodeUnit.resx">
+      <DependentUpon>FrmCodeUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExtendSetting.resx">
+      <DependentUpon>FrmExtendSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFunction_Mini.resx">
+      <DependentUpon>FrmFunction_Mini.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNxN.resx">
+      <DependentUpon>FrmNxN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParaS.resx">
+      <DependentUpon>FrmParaS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSafe.resx">
+      <DependentUpon>FrmSafe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
