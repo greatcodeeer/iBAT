@@ -5,7 +5,5 @@
 <li>强大的测试调试模式</li>
 <li>执行策略和安全策略应用</li>
 
-![](https://codeeer.com/ibat/img/groupcode.gif)
-
 #### 主页地址
 https://codeeer.com/ibat/
