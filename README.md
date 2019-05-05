@@ -6,4 +6,4 @@
 <li>执行策略和安全策略应用</li>
 
 #### 主页地址
-https://codeeer.com/ibat/
+https://ibat.codeeer.com
